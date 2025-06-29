@@ -4,23 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Random Quote Generator</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Quote of the Day</h1>
-    <div class="quote-box">
+    <h1>Random Quote Generator</h1>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+    <!-- Quote Display -->
+    <div class="quote-box" id="quote-box">
       <p class="quote-text" id="quote">Loading...</p>
-      <p class="author">~ <span id="author">...</span></p>
     </div>
 
+    <!-- Buttons -->
     <div class="buttons">
-      <button id="new-quote"><i class="fas fa-sync"></i> New Quote</button>
-      <button id="copy-btn"><i class="fas fa-copy"></i> Copy</button>
-      <button id="tweet-btn"><i class="fab fa-twitter"></i> Tweet</button>
+      <button id="new-quote">New</button>
+      <button id="copy-btn">Copy</button>
+      <button id="tweet-btn">Tweet</button>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
